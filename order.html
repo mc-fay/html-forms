@@ -1,8 +1,11 @@
 <!doctype html>
+
 <html>
+
     <head>
         <title>Order a Melongram</title>
     </head>
+
     <body>
         <h1>Order a Melongram</h1>
 
@@ -10,45 +13,73 @@
             "There's no better way to show a loved one you care than 
             with a Melongram."
         </p>
+        
         <p>
             "Each Melongram comes with a custom message printed on 
             high-quality cardstock and your choice of a hand-picked,
             premium melon."
         </p>
 
-       <h2>Melon Options</h2> 
+        <h2>Melon Options</h2> 
 
         <p>Choose from one of these melons:</p>
 
 
        <table> 
-            <tr>Watermelon $1,200.00</tr>
-            <tr>Canteloupe $400.00</tr> 
-            <tr>Honeydew $1,750.00</tr>
+
+            <tr>
+                <td>Watermelon</td> <td>$1,200.00</td>
+            </tr>
+
+            <tr>
+                <td>Canteloupe</td> <td>$400.00</td>
+            </tr> 
+
+            <tr>
+                <td>Honeydew</td><td>$1,750.00</td>
+            </tr>
+
        </table> 
 
 
-        Order Form
+        <h2>Order Form</h2>
 
         Your name
+        <input type="text" name="name">
 
         Who are we sending this to?
+        <input type="text" name="recipient">
 
         Choose a melon
-        Watermelon
-        Canteloupe
-        Honeydew
+        <select name="melon">
+            <option value="Watermelon">Watermelon</option>
+            <option value="Canteloupe">Canteloupe"</option>
+            <option value="Honeydew">Honeydew</option>
+        </select>    
 
-        When should we deliver?
-        Morning
-        Evening
-        Any time
+        <form>
+            <label for="delivery-time">When should we deliver?</label>
+            <input type="radio" name="Morning" value="am"> am
+            <input type="radio" name="Evening" value="pm"> pm
+            <input type="radio" name="Any time" value="any>" any
+        </form>
+        
+        <form>
+            <label for="leave-message">Enter your message:</label>
+            <textarea name="message" id="about-me"></textarea>
+        </form>
 
-        Enter your message:
+        <form>
+            Subscribe to our newsletter 
+            <input type="checkbox" name="subscribe" value="yes">
+        </form>
 
-        Subscribe to our newsletter
-        Yes
+        <form>
+            <input type="submit">
+        </form>
+        
     </body>
+    
 </html>
     
 
